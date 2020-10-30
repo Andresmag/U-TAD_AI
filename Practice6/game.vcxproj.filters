@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="gameConfig.cpp" />
+    <ClCompile Include="host\FolderWatcher-win.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\GlutHost.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\GlutHostMain.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\ParticlePresets.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="pathfinding\pathfinder.cpp">
+      <Filter>pathfinder</Filter>
+    </ClCompile>
+    <ClCompile Include="pathfinding\navmesh.cpp">
+      <Filter>pathfinder</Filter>
+    </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>character</Filter>
+    </ClCompile>
+    <ClCompile Include="params.cpp">
+      <Filter>character</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\stateMachine.cpp">
+      <Filter>stateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\state.cpp">
+      <Filter>stateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\arrivalSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\obstacleAvoidanceSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\pathFollowingSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\pursueSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\seekSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\wanderSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\alignSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\alignToMovementSteering.cpp">
+      <Filter>steering</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\transition.cpp">
+      <Filter>stateMachine</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\conditions\enemyInRangeCondition.cpp">
+      <Filter>stateMachine\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\actions\pursueAction.cpp">
+      <Filter>stateMachine\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\conditions\enemyInAttackRangeCondition.cpp">
+      <Filter>stateMachine\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\actions\attackAction.cpp">
+      <Filter>stateMachine\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\actions\wanderAction.cpp">
+      <Filter>stateMachine\actions</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\conditions\receivingDamageCondition.cpp">
+      <Filter>stateMachine\conditions</Filter>
+    </ClCompile>
+    <ClCompile Include="statemachine\conditions\isCharacterAlive.cpp">
+      <Filter>stateMachine\conditions</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="gameConfig.h" />
+    <ClInclude Include="host\FolderWatcher-win.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\GlutHost.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\ParticlePresets.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="pathfinding\navmesh.h">
+      <Filter>pathfinder</Filter>
+    </ClInclude>
+    <ClInclude Include="pathfinding\node.h">
+      <Filter>pathfinder</Filter>
+    </ClInclude>
+    <ClInclude Include="pathfinding\pathfinder.h">
+      <Filter>pathfinder</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>character</Filter>
+    </ClInclude>
+    <ClInclude Include="params.h">
+      <Filter>character</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\actions\action.h">
+      <Filter>stateMachine\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\andCondition.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\condition.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\orCondition.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\state.h">
+      <Filter>stateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\stateMachine.h">
+      <Filter>stateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\transition.h">
+      <Filter>stateMachine</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\alignToMovementSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\arrivalSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\obstacleAvoidanceSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\pathFollowingSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\pursueSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\seekSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\steering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\wanderSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\alignSteering.h">
+      <Filter>steering</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\actions\setImageAction.h">
+      <Filter>stateMachine\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\actions\pursueAction.h">
+      <Filter>stateMachine\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\enemyInRangeCondition.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\inverseCondition.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\enemyInAttackRangeCondition.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\actions\attackAction.h">
+      <Filter>stateMachine\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\actions\wanderAction.h">
+      <Filter>stateMachine\actions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\receivingDamageCondition.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+    <ClInclude Include="statemachine\conditions\isCharacterAlive.h">
+      <Filter>stateMachine\conditions</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="host">
+      <UniqueIdentifier>{87717a51-4516-4c06-a1de-c6b89a5c16e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample">
+      <UniqueIdentifier>{dafee91e-18b1-4dd7-a488-726565484f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pathfinder">
+      <UniqueIdentifier>{a7b7a8bd-447f-462f-ab1b-95bdc4b452c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steering">
+      <UniqueIdentifier>{679e8698-380f-425d-a164-3135699bad22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="character">
+      <UniqueIdentifier>{67aeb2b2-ce7e-4ab5-86eb-661143f31850}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stateMachine">
+      <UniqueIdentifier>{548e339b-007d-40ca-b657-4fdb8d3fdc77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stateMachine\actions">
+      <UniqueIdentifier>{1a734601-e048-4190-8794-3f13f5537d4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="stateMachine\conditions">
+      <UniqueIdentifier>{d0f8acbe-7c78-46c8-98f0-6c435c6e1119}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sample\test.lua">
+      <Filter>sample</Filter>
+    </None>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,37 @@
+<state-machine>
+    <states startState="0">
+        <!-- Idle State -->
+        <state>
+            <enter-action action="setImage" index="0"></enter-action>
+            <state-action action="wander"></state-action>
+        </state>
+
+        <!-- Receiving Damage State -->
+        <state>
+            <enter-action action="setImage" index="2"></enter-action>
+            <state-action action="wander"></state-action>
+        </state>
+
+        <!-- Death State -->
+        <state>
+            <enter-action action="setImage" index="3"></enter-action>
+        </state>
+    </states>
+
+    <transitions>
+        <!-- Transition Idle-Damage -->
+        <transition from="0" to="1">
+            <condition type="receivingDamage" inverse="false"></condition>
+        </transition>
+
+        <!-- Transition Damage-Death higher priority in Damage -->
+        <transition from="1" to="2">
+            <condition type="isAlive" inverse="true" target="self"></condition>
+        </transition>
+
+        <!-- Transition Damage-Idle -->
+        <transition from="1" to="0">
+            <condition type="receivingDamage" inverse="true"></condition>
+        </transition>
+    </transitions>
+</state-machine>

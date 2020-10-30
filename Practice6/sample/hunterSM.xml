@@ -1,0 +1,64 @@
+<state-machine>
+    <states startState="0">
+        <!-- Idle State -->
+        <state>
+            <enter-action action="setImage" index="1"></enter-action>
+        </state>
+
+        <!-- Alert State -->
+        <state>
+            <enter-action action="setImage" index="2"></enter-action>
+            <state-action action="pursue"></state-action>
+        </state>
+        
+        <!-- Attack State -->
+        <state>
+            <enter-action action="setImage" index="3"></enter-action>
+            <state-action action="attack" damage="50"></state-action>
+        </state>
+    </states>
+
+    <transitions>
+        <!-- Transition Idle-Attack higher priority in Idle -->
+        <transition from="0" to="2">
+            <condition type="and">
+                <condition type="enemyInAttackRange" inverse="false"></condition>
+                <condition type="isAlive" inverse="false" target="enemy"></condition>
+            </condition>
+        </transition>
+
+        <!-- Transition Idle-Alert -->
+        <transition from="0" to="1">
+            <condition type="and">
+                <condition type="enemyInRange" inverse="false"></condition>
+                <condition type="isAlive" inverse="false" target="enemy"></condition>
+            </condition>
+        </transition>
+
+        <!-- Transition Alert-Idle -->
+        <transition from="1" to="0">
+            <condition type="or">
+                <condition type="isAlive" inverse="true" target="enemy"></condition>
+                <condition type="enemyInRange" inverse="true"></condition>
+            </condition>
+        </transition>
+
+        <!-- Transition Alert-Attack -->
+        <transition from="1" to="2">
+            <condition type="and">
+                <condition type="enemyInAttackRange" inverse="false"></condition>
+                <condition type="isAlive" inverse="false" target="enemy"></condition>
+            </condition>
+        </transition>
+
+        <!-- Transition Attack-Alert -->
+        <transition from="2" to="1">
+            <condition type="enemyInAttackRange" inverse="true"></condition>
+        </transition>
+
+        <!-- Transition Attack-Idle -->
+        <transition from="2" to="0">
+            <condition type="isAlive" inverse="true" target="enemy"></condition>
+        </transition>
+    </transitions>
+</state-machine>
