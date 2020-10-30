@@ -1,0 +1,30 @@
+<behavior-tree>
+    <!-- Root Node -->
+    <root type="selector">
+        <condition type=""></condition>
+        <!-- Death -->
+        <behavior type="changeImage" index="3">
+            <condition type="isAlive" inverse="true" target="self"></condition>
+        </behavior>
+        <!-- Receive Damage -->
+        <group type="sequence">
+            <condition type="ReceivingDamage"></condition>
+            <behavior type="changeImage" index="2">
+                <condition type=""></condition>
+            </behavior>
+            <behavior type="wander" damage="true">
+                <condition type=""></condition>
+            </behavior>
+        </group>
+        <!-- Idle -->
+        <group type="sequence">
+            <condition type=""></condition>
+            <behavior type="changeImage" index="0">
+                <condition type=""></condition>
+            </behavior>
+            <behavior type="wander" damage="false">
+                <condition type=""></condition>
+            </behavior>
+        </group>
+    </root>
+</behavior-tree>

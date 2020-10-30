@@ -1,0 +1,34 @@
+<behavior-tree>
+    <!-- Root Node -->
+    <root type="selector">
+        <condition type=""></condition>
+        <!-- Enemy Alive -->
+        <group type="selector">
+            <condition type="isAlive" inverse="false" target="enemy"></condition>
+            <!-- Attack -->
+            <group type="sequence">
+                <condition type="enemyInAttackRange"></condition>
+                <behavior type="changeImage" index="3">
+                    <condition type=""></condition>
+                </behavior>
+                <behavior type="attack" damage="50">
+                    <condition type=""></condition>
+                </behavior>
+            </group>
+            <!-- Pursue -->
+            <group type="sequence">
+                <condition type="enemyInRange"></condition>
+                <behavior type="changeImage" index="2">
+                    <condition type=""></condition>
+                </behavior>
+                <behavior type="pursue">
+                    <condition type=""></condition>
+                </behavior>
+            </group>
+        </group>
+        <!-- Idle -->
+        <behavior type="changeImage" index="1">
+            <condition type=""></condition>
+        </behavior>
+    </root>
+</behavior-tree>
