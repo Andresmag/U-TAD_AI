@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="gameConfig.cpp" />
+    <ClCompile Include="host\FolderWatcher-win.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\GlutHost.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\GlutHostMain.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="host\ParticlePresets.cpp">
+      <Filter>host</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="params.cpp" />
+    <ClCompile Include="pathfinding\pathfinder.cpp">
+      <Filter>pathfinder</Filter>
+    </ClCompile>
+    <ClCompile Include="pathfinding\navmesh.cpp">
+      <Filter>pathfinder</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\alignSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\alignToMovementSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\arrivalSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\obstacleAvoidanceSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\pathFollowingSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\pursueSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\seekSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+    <ClCompile Include="steerings\wanderSteering.cpp">
+      <Filter>steerings</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="character.h" />
+    <ClInclude Include="gameConfig.h" />
+    <ClInclude Include="host\FolderWatcher-win.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\GlutHost.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="host\ParticlePresets.h">
+      <Filter>host</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="params.h" />
+    <ClInclude Include="pathfinding\navmesh.h">
+      <Filter>pathfinder</Filter>
+    </ClInclude>
+    <ClInclude Include="pathfinding\node.h">
+      <Filter>pathfinder</Filter>
+    </ClInclude>
+    <ClInclude Include="pathfinding\pathfinder.h">
+      <Filter>pathfinder</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\alignSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\alignToMovementSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\arrivalSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\obstacleAvoidanceSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\pathFollowingSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\pursueSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\seekSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\steering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+    <ClInclude Include="steerings\wanderSteering.h">
+      <Filter>steerings</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="host">
+      <UniqueIdentifier>{87717a51-4516-4c06-a1de-c6b89a5c16e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="sample">
+      <UniqueIdentifier>{dafee91e-18b1-4dd7-a488-726565484f1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pathfinder">
+      <UniqueIdentifier>{a7b7a8bd-447f-462f-ab1b-95bdc4b452c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="steerings">
+      <UniqueIdentifier>{e09ca7c8-e79e-4b44-a0eb-fc7433625255}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="sample\test.lua">
+      <Filter>sample</Filter>
+    </None>
+  </ItemGroup>
+</Project>
